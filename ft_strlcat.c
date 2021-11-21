@@ -6,7 +6,7 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:24:25 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/19 08:41:52 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/20 15:57:21 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	j = 0;
 	destlen = ft_strlen(dest);
 	srclen = ft_strlen(src);
+	if (!dest && size == 0)
+		return (ft_strlen(src));
 	if (size <= destlen)
 	{
 		return (srclen + size);

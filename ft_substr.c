@@ -6,7 +6,7 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:25:13 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/19 08:50:03 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/20 19:17:11 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		c = malloc(1 * sizeof(char));
 		if (!c)
-			return (0);
+			return (NULL);
 		c[0] = '\0';
 		return (c);
 	}
@@ -33,8 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	while (s[start] && len > 0)
 	{
-		c[j++] = s[start];
-		start++;
+		c[j++] = s[start++];
 		len--;
 	}
 	c[j] = '\0';

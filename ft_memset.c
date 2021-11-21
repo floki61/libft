@@ -6,7 +6,7 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:21:15 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/15 21:40:14 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/20 22:23:17 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,14 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	char	*str;
+	unsigned char	*str;
 
-	str = (char *)s;
+	str = (unsigned char *)s;
 	while (n)
 	{
-		*str = c;
+		*str = (unsigned char)c;
 		str++;
 		n--;
 	}
 	return (s);
 }
-// int main()
-// {
-// 	char test[] = "abcdefggg";
-// 	printf("%s",ft_memset(test,'A',4));
-// }

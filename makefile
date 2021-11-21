@@ -27,7 +27,8 @@ $(NAME):
 
 bonus:
 	gcc $(FLAGS) $(BSRCS)
-	ar -rs $(NAME) $(BOBJS)
+	ar -rc $(NAME) $(BOBJS)
+	ranlib $(NAME)
 
 clean:
 	rm -rf $(OBJS) $(BOBJS)

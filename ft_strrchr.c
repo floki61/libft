@@ -6,7 +6,7 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:24:59 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/19 08:45:53 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/20 22:24:22 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ char	*ft_strrchr(const char	*s, int searchedchar)
 	}
 	while (i >= 0)
 	{
-		if (*s == searchedchar)
+		if (*s == (char)searchedchar)
 		{
 			return ((char *)s);
 		}
 		s--;
 		i--;
 	}
-	return (0);
+	return (NULL);
 }
