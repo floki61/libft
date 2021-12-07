@@ -6,13 +6,13 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 07:41:41 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/21 09:53:01 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/23 13:06:48 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(const char *str, char c)
+static int	count(const char *str, char c)
 {
 	int	i;
 	int	len;
@@ -35,7 +35,7 @@ int	count(const char *str, char c)
 	return (len);
 }
 
-int	ft_second(const char *str, int i, char c)
+static int	ft_second(const char *str, int i, char c)
 {
 	int		cnt;
 	char	*s;
@@ -50,7 +50,7 @@ int	ft_second(const char *str, int i, char c)
 	return (cnt);
 }
 
-char	**set_array(char const *s, char c, int i, char **tab)
+static char	**set_array(char const *s, char c, int i, char **tab)
 {
 	int	k;
 	int	j;

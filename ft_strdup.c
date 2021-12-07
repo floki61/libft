@@ -32,8 +32,3 @@ char	*ft_strdup(const char *src)
 	s[j] = '\0';
 	return (s);
 }
-// int main()
-// {   
-//     char *c = "omar";
-//     printf("c = %s",ft_strdup(c));
-// }

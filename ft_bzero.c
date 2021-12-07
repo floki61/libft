@@ -6,7 +6,7 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:22:00 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/19 06:04:35 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/25 23:50:53 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@ void	ft_bzero(void *s, size_t n)
 	char	*tmp;
 
 	tmp = (char *)s;
-	while (n && *tmp)
+	while (n)
 	{
-		*tmp = '\0';
-		tmp++;
+		*tmp++ = 0;
 		n--;
 	}
 }

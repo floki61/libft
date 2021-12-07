@@ -6,13 +6,13 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 05:25:08 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/20 21:58:02 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/23 12:58:14 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	last(const char *s1, const char *set)
+static int	last(const char *s1, const char *set)
 {
 	int	i;
 	int	j;
@@ -35,7 +35,7 @@ int	last(const char *s1, const char *set)
 	return (j);
 }
 
-int	first(const char *s1, const char *set)
+static int	first(const char *s1, const char *set)
 {
 	int	i;
 	int	k;

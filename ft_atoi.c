@@ -6,13 +6,13 @@
 /*   By: oel-berh <oel-berh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 05:23:25 by oel-berh          #+#    #+#             */
-/*   Updated: 2021/11/19 06:00:38 by oel-berh         ###   ########.fr       */
+/*   Updated: 2021/11/25 13:23:31 by oel-berh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_skip(const char *str)
+static int	ft_skip(const char *str)
 {
 	int	i;
 
@@ -26,7 +26,7 @@ int	ft_skip(const char *str)
 	return (i);
 }
 
-int	ft_signe(const char	*str, int i, int a)
+static int	ft_signe(const char	*str, int i, int a)
 {
 	unsigned long	resultat;
 
@@ -66,8 +66,3 @@ int	ft_atoi(const char *str)
 		resultat = ft_signe(str, i, a) * a;
 	return (resultat);
 }
-// int main()
-// {
-// 	char *str ="---9223372036854775807";
-// 	printf("%d",ft_atoi(str));
-// }
